@@ -42,7 +42,7 @@ if(process.env.NODE_ENV === 'production') {
     })
 }
 
-const uri = process.env.ATLAS_URI;
+const uri = process.env.DATABASE_URL;
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
