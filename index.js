@@ -4,6 +4,7 @@ import express from "express";
 import dotenv from "dotenv";
 import tasks from "./router/tasks.js";
 import path from "path"
+import userRoutes from './router/user.js'
 
 import { fileURLToPath } from 'url'
 import { dirname } from 'path'
@@ -24,6 +25,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/api/tasks", tasks);
+app.use("/api/users", userRoutes);
 
 
 
