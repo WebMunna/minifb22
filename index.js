@@ -45,7 +45,7 @@ if(process.env.NODE_ENV === 'production') {
 }
 
 const uri = process.env.DATABASE_URL;
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 4000;
 
 app.listen(port, () => {
     console.log(`server running on the port: ${port}...`)
